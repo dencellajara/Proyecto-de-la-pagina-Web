@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería Bella Napoli</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f1e4;
+            text-align: center;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Menú de navegación */
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Contenedor de la pizza animada */
+        .pizza-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .pizza {
+            width: 200px;
+            height: 200px;
+            background: url('https://www.pngall.com/wp-content/uploads/2016/05/Pizza-Free-Download-PNG.png') no-repeat center center / contain;
+            border-radius: 50%;
+            position: absolute;
+            animation: spinPizza 5s linear infinite;
+        }
+
+        /* Animación de la pizza */
+        @keyframes spinPizza {
+            0% {
+                transform: rotate(0deg) translateX(100px) rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg) translateX(100px) rotate(-360deg);
+            }
+        }
+
+        /* Sección del menú */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 50px auto;
+            flex-wrap: wrap;
+            max-width: 900px;
+        }
+
+        .menu-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item h3 {
+            color: #d32f2f;
+            font-size: 1.5em;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    🍕 Pizzería Bella Napoli - ¡El sabor de Italia en cada bocado! 🍕
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Menú</a>
+    <a href="#">Promociones</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<!-- Contenedor de la pizza animada -->
+<div class="pizza-container">
+    <div class="pizza"></div>
+</div>
+
+<!-- Sección del menú -->
+<div class="menu">
+    <div class="menu-item">
+        <img src="https://www.simplyrecipes.com/thmb/JljKy-N2mQvqIQG0-DzsmZz1CoY=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Homemade-Pizza-MFS-5-bd3afee962d14ca587f7d7fc2b72ea5d.jpg" alt="Pizza Margarita">
+        <h3>Pizza Margarita</h3>
+        <p>Tomate, mozzarella fresca y albahaca.</p>
+    </div>
+    <div class="menu-item">
+        <img src="https://www.simplyrecipes.com/thmb/kb5o0AGiM9vEPjWpqKcOp1l7ITQ=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Supreme-Pizza-Lead-1-872e4bde53a14859aa53064b57a0ec5c.jpg" alt="Pizza Suprema">
+        <h3>Pizza Suprema</h3>
+        <p>Pepperoni, champiñones, pimientos y queso.</p>
+    </div>
+    <div class="menu-item">
+        <img src="https://www.simplyrecies.com/thmb/V4oeww9VxO7hJvdkxM8S00cXBGw=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-BBQ-Chicken-Pizza-MFS-15-43ac4ea230c445ad87a9a71ffb5f32ea.jpg" alt="Pizza BBQ">
+        <h3>Pizza BBQ</h3>
+        <p>Pollo a la BBQ, cebolla y queso cheddar.</p>
+    </div>
+</div>
+
+<!-- Pie de página -->
+<footer>
+    &copy; 2025 Pizzería Bella Napoli. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
